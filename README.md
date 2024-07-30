@@ -1,6 +1,14 @@
 # clj-virtual-threads
 An experiment with Java21 Virtual Threads and Clojure
 
+## Running
+
+Using the Clojure [CLI](https://clojure.org/guides/deps_and_cli), you can run this program like so:
+
+```sh
+clj src/main.clj
+```
+
 ## Results
 
 ```
