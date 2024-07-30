@@ -6,18 +6,18 @@
 (defn v-start [_]
   (-> (Thread/ofVirtual) (.start #(swap! c inc))))
 
-(def tstart (System/currentTimeMillis))
+(def vstart (System/currentTimeMillis))
 
 (def v-threads (map v-start (vec (repeat 100000 nil))))
 
 (run! #(.join %) v-threads)
 
-(def tend (System/currentTimeMillis))
+(def vend (System/currentTimeMillis))
 
 (println "count: " @c)
-(println "virtual start time (ms): " tstart)
-(println "virtual end time (ms): " tend)
-(println "virtual elapsed time (ms): " (- tend tstart))
+(println "virtual start time (ms): " vstart)
+(println "virtual end time (ms): " vend)
+(println "virtual elapsed time (ms): " (- vend vstart))
 
 (reset! c 0)
 
