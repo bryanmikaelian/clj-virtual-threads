@@ -2,7 +2,7 @@
 
 (def c (atom 0))
 
-
+;; Virtual Threads
 (defn v-start [_]
   (-> (Thread/ofVirtual) (.start #(swap! c inc))))
 
@@ -21,7 +21,7 @@
 
 (reset! c 0)
 
-
+;; Real Threads
 (defn r-start [_] (Thread. #(swap! c inc)))
 
 (def rstart (System/currentTimeMillis))
