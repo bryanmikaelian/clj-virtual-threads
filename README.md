@@ -12,6 +12,7 @@ clj src/main.clj
 ## Results
 
 I ran this on my current laptop with these specs
+
 ![CleanShot 2024-07-31 at 10 49 58](https://github.com/user-attachments/assets/bdcb6af4-fae5-4fbc-97e6-e0da467f7846)
 
 
