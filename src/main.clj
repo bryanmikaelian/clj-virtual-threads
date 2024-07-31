@@ -1,5 +1,6 @@
 (ns main)
 
+(def num-threads 100000)
 (def c (atom 0))
 
 ;; Virtual Threads
@@ -8,7 +9,7 @@
 
 (def vstart (System/currentTimeMillis))
 
-(def v-threads (map v-start (vec (repeat 100000 nil))))
+(def v-threads (map v-start (vec (repeat num-threads nil))))
 
 (run! #(.join %) v-threads)
 
@@ -26,7 +27,7 @@
 
 (def rstart (System/currentTimeMillis))
 
-(def r-threads (map r-start (vec (repeat 100000 nil))))
+(def r-threads (map r-start (vec (repeat num-threads nil))))
 
 
 (run! #(.start %) r-threads)
