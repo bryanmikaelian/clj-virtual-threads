@@ -1,5 +1,5 @@
 # clj-virtual-threads
-An experiment with Java21 Virtual Threads and Clojure. Both examples just update an `atom` counter.
+An experiment with Java21 Virtual Threads and Clojure. Both examples just update an `atom` counter over 100000 threads, comparing the execution time between a virtual thread and a "real" thread.
 
 ## Running
 
