@@ -18,11 +18,11 @@ I ran this on my current laptop with these specs
 
 ```
 count:  100000
-virtual start time (ms):  1722372051538
-virtual end time (ms):  1722372051964
-virtual elapsed time (ms):  426
+virtual start time (ms):  1722446540075
+virtual end time (ms):  1722446540306
+virtual elapsed time (ms):  231
 count:  100000
-real start time (ms):  1722372051973
-real end time (ms):  1722372056862
-real elapsed time (ms):  4889
+real start time (ms):  1722446540311
+real end time (ms):  1722446543667
+real elapsed time (ms):  3356
 ```
